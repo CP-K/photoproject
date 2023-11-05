@@ -19,10 +19,10 @@
                 <!-- 投稿日時 -->
                 <p>{{object.posted_at}}に投稿</p>
                 <!-- 1枚目の写真 -->
-                <p><img src="{{ object.image1.url }}"></img></p>
+                <p><img src="{{ object.image1.url }}" width="100%" height="100%"></img></p>
                 <!-- 2枚目の写真が投稿されていたら表示する -->
                 {% if object.image2 %}
-                    <p><img src="{{ object.image2.url }}"></img></p>
+                    <p><img src="{{ object.image2.url }}" width="100%" height="100%"></img></p>
                 {% endif %}
 
                 <!-- 投稿写真がログイン中のユーザーのものであれば削除ボタンを表示 -->
